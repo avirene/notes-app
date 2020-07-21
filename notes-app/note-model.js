@@ -1,20 +1,17 @@
 "use strict";
 
-(function(exports) {
-  function NoteModel() {
+class NoteModel {
+  constructor() {
     this._text = "";
-  };
+  }
 
-  NoteModel.prototype = {
-    text: function() {
-      return this._text;
-    },
+  getText() {
+    return this._text;
+  }
 
-    set: function(text) {
-      this._text = text;
-    },
+  set(text) {
+    text = document.getElementById("app");
+    this._text = text;
+  }
 
-  };
-
-  exports.NoteModel = NoteModel;
-})(this);
+}
