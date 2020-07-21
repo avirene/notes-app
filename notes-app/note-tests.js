@@ -1,6 +1,7 @@
 noteModel = new NoteModel;
 
-function it(callback) {
+function it(callback, description) {
+  console.log(description)
   callback()
 };
 
@@ -18,4 +19,4 @@ function expect(a) {
 
 
 // test
-it(function () {expect(noteModel).beInstanceOf(NoteModel)});
+it(function () {expect(noteModel).beInstanceOf(NoteModel)}, "checks if it's an instance");
