@@ -10,7 +10,8 @@ class NoteModel {
   }
 
   set(text) {
+    text = document.getElementById("app");
     this._text = text;
   }
-  
+
 }
