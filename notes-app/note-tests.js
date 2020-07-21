@@ -1,15 +1,21 @@
-// const { NoteModel } = require("./notes-app/note-model");
+noteModel = new NoteModel;
 
-(function (exports) {
-  function testNoteModel() {
-    var noteModel;
+function it(callback) {
+  callback()
+};
 
-    if (noteModel !== new NoteModel()) {
-      throw new Error("Not an instance of a NoteModel");
+function expect(a) {
+  return {
+    beInstanceOf: function (b) {
+      if (a instanceof b) {
+        console.log('Pass')
+      } else {
+        console.log('Fail')
+      }
     }
-    console.log("this is a test");
-    return('a test')
-  };
+  }
+}
 
-  testNoteModel();
-})(this);
+
+// test
+it(function () {expect(noteModel).beInstanceOf(NoteModel)});
