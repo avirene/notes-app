@@ -23,6 +23,9 @@ To create a Single Page Application capable of running on the browser and storin
 ## Progress 
 - Have created our note model which will be used for creating and writing notes to our browser.
 - Have started on our testing framework and 1st test.
+- Second and third tests written and passed
+- Model now switched over to classes
+- HTML connected to note-model
 
 ## Improvements
 
