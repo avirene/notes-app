@@ -9,12 +9,34 @@
 </head>
 <body>
   <h1>Notes App</h1>
-  <div id="app">
+  <!-- <div id="app">
     hello
-    <!-- <form>
+    <form>
       <input type="text"><br>
       <input type="submit" value="Click">
-    </form>  -->
-  </div>
+    </form> 
+  </div>  -->
+
+  <input type="input" maxlength="40" id="userInput" onkeyup="showMsg()" placeholder="Enter text here...">
+
+  <p id="userMsg"></p>
+  <input type="button" onclick="Msg1()" value="Submit">
+  <p id="myText"></p>
+
+  <script>
+    function showMsg(){
+      var userInput = document.getElementById('userInput').value;
+      document.getElementById('userMsg').innerHTML = userInput;
+    }
+  
+    function Msg1(){
+      document.getElementById('userInput').value;
+      document.getElementById('myText').textContent = userInput;
+      // document.getElementById('userMsg2').textContent = userInput;
+    }
+  
+
+  </script>
+      
 </body>
 </html>
