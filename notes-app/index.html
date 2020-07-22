@@ -17,7 +17,7 @@
     </form> 
   </div>  -->
 
-  <input type="input" maxlength="40" id="userInput" onkeyup="showMsg()" placeholder="Enter text here...">
+  <input type="input" maxlength="250" id="userInput" onkeyup="showMsg()" placeholder="Enter text here...">
 
   <p id="userMsg"></p>
   <input type="button" onclick="Msg1()" value="Submit">
@@ -30,9 +30,9 @@
     }
   
     function Msg1(){
-      document.getElementById('userInput').value;
-      document.getElementById('myText').textContent = userInput;
-      // document.getElementById('userMsg2').textContent = userInput;
+      var userInput1 = document.getElementById('userInput').value;
+      document.getElementById('myText').textContent = userInput1;
+  
     }
   
 
