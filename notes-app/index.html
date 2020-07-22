@@ -9,30 +9,18 @@
 </head>
 <body>
   <h1>Notes App</h1>
-  <!-- <div id="app">
-    hello
-    <form>
-      <input type="text"><br>
-      <input type="submit" value="Click">
-    </form> 
-  </div>  -->
 
-  <input type="input" maxlength="250" id="userInput" onkeyup="showMsg()" placeholder="Enter text here...">
+  <textarea type="input" maxlength="250" rows="10" cols="50" id="user_input" placeholder="Enter text here..."></textarea>
 
-  <p id="userMsg"></p>
-  <input type="button" onclick="Msg1()" value="Submit">
+
+  <input type="button" onclick="textInput()" value="Submit">
   <p id="myText"></p>
 
   <script>
-    function showMsg(){
-      var userInput = document.getElementById('userInput').value;
-      document.getElementById('userMsg').innerHTML = userInput;
-    }
   
-    function Msg1(){
-      var userInput1 = document.getElementById('userInput').value;
-      document.getElementById('myText').textContent = userInput1;
-  
+    function textInput(){
+      var userInput = document.getElementById('user_input').value;
+      document.getElementById('myText').textContent = userInput;
     }
   
 
