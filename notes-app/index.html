@@ -7,24 +7,35 @@
   <script src="note-tests.js"></script>
   <title>Notes</title>
 </head>
+<!-- <script>
+  var testModel = new NoteModel();
+</script> -->
 <body>
+
   <h1>Notes App</h1>
 
   <textarea type="input" maxlength="250" rows="10" cols="50" id="user_input" placeholder="Enter text here..."></textarea>
 
 
-  <input type="button" onclick="textInput()" value="Submit">
+  <input type="button" onclick="testModel.textInput();" value="Submit">
   <p id="myText"></p>
 
-  <script>
-  
-    function textInput(){
-      var userInput = document.getElementById('user_input').value;
-      document.getElementById('myText').textContent = userInput;
-    }
-  
+<!-- <script>
 
-  </script>
-      
+  // listen to clicks on the button, ad when there is a click,
+  // get the text from the input,
+  // that's where you want to call "set" on the model
+  
+    // function textInput(){
+    //   var userInput = document.getElementById('user_input').value;
+    //   document.getElementById('myText').textContent = userInput;
+    // }
+  
+    // function clearField() {
+    //   document.getElementById("user_input").remove();
+    // }
+
+  </script> -->
+  <script src="interface.js"></script>      
 </body>
 </html>

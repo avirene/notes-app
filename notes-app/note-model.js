@@ -14,4 +14,9 @@ class NoteModel {
     this._text = text;
   }
 
+  textInput(){
+    var userInput = document.getElementById('user_input').value;
+    document.getElementById('myText').textContent = userInput;
+  }
+
 }

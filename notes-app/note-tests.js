@@ -38,3 +38,14 @@ it(function () {expect(noteModel).beInstanceOf(NoteModel)}, "checks if it's an i
 it(function () {expect(noteModel._text).toEqual("")}, "checks textbox is empty on creation");
 
 it(function () {expect(noteModel._text).toNotEqual("")}, "checks textbox contains text");
+
+var notebook = new NoteBook();
+var note = new Note("blah");
+notebook.add(note);
+// notebook.list();
+// note.toHtml();
+// note.summary();
+notebook.toHtml();
+<ul>
+  <li>blah</li>
+</ul>
