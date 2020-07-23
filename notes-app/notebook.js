@@ -1,8 +1,8 @@
 "use strict";
 
-class NoteModel {
+class NoteBook {
   constructor() {
-    this._text = "";
+    this._notes = [];
   }
 
   getText() {
@@ -14,7 +14,7 @@ class NoteModel {
     this._text = text;
   }
 
-  textInput(){
+  textInput() {
     var userInput = document.getElementById('user_input').value;
     document.getElementById('myText').textContent = userInput;
   }

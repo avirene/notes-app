@@ -1,4 +1,4 @@
-noteModel = new NoteModel;
+note = new Note;
 
 function it(callback, description) {
   console.log(description)
@@ -22,8 +22,8 @@ function expect(a) {
       }
     },
     toNotEqual: function () {
-      noteModel.set('hello')
-      if (noteModel._text !== ("")) {
+      note.set('hello')
+      if (note._text !== ("")) {
         console.log('Pass')
       } else {
         console.log('Fail')
@@ -33,11 +33,11 @@ function expect(a) {
 }
 
 // test
-it(function () {expect(noteModel).beInstanceOf(NoteModel)}, "checks if it's an instance");
+it(function () {expect(note).beInstanceOf(Note)}, "checks if it's an instance");
 
-it(function () {expect(noteModel._text).toEqual("")}, "checks textbox is empty on creation");
+it(function () {expect(note._text).toEqual("")}, "checks textbox is empty on creation");
 
-it(function () {expect(noteModel._text).toNotEqual("")}, "checks textbox contains text");
+it(function () {expect(note._text).toNotEqual("")}, "checks textbox contains text");
 
 var notebook = new NoteBook();
 var note = new Note("blah");

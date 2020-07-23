@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="note-model.js"></script>
+  <script src="note.js"></script>
   <script src="note-tests.js"></script>
   <title>Notes</title>
 </head>
 <!-- <script>
-  var testModel = new NoteModel();
+  var note = new Note();
 </script> -->
 <body>
 
@@ -17,7 +17,7 @@
   <textarea type="input" maxlength="250" rows="10" cols="50" id="user_input" placeholder="Enter text here..."></textarea>
 
 
-  <input type="button" onclick="testModel.textInput();" value="Submit">
+  <input type="button" onclick="text();" value="Submit">
   <p id="myText"></p>
 
 <!-- <script>
