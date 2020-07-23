@@ -5,18 +5,21 @@ class NoteBook {
     this._notes = [];
   }
 
-  getText() {
-    return this._text;
+  add(text) {
+    this._notes.push(text);
   }
+  // getText() {
+  //   return this._text;
+  // }
 
-  set(text) {
-    text = document.getElementById("app");
-    this._text = text;
-  }
+  // set(text) {
+  //   text = document.getElementById("app");
+  //   this._text = text;
+  // }
 
-  textInput() {
-    var userInput = document.getElementById('user_input').value;
-    document.getElementById('myText').textContent = userInput;
-  }
+  // textInput() {
+  //   var userInput = document.getElementById('user_input').value;
+  //   document.getElementById('myText').textContent = userInput;
+  // }
 
 }

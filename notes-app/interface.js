@@ -7,6 +7,10 @@ function text() {
   
   document.getElementById("myText").innerHTML = text;
 }
+
+// function add New Note to Notebook.add
+
+
 // document.getElementById('user_input').value
 
 // create a new noteModel to store that text
