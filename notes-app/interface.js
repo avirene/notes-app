@@ -1,17 +1,24 @@
- var note = new Note();
+ var notebook = new NoteBook();
 // when submit is clicked,
 // read the text from the text area
-document.getElementById("user_input").addEventListener("click", text);
 
 function text() {
-  
-  document.getElementById("myText").innerHTML = text;
+  var input = document.getElementById("user_input").value;
+  note = new Note();
+  note.set(input)
+  notebook.add(note);
+  addnotes(notebook)
+  // document.getElementById("display").innerHTML = note._text;
+  input.value = '';
 }
 
-// function add New Note to Notebook.add
+document.getElementById('button1').addEventListener('click', whenClicked);
 
-
-// document.getElementById('user_input').value
-
-// create a new noteModel to store that text
-// 
+ function addnotes(notebook) {
+   var display = document.getElementById("user_input").value;
+  // var display = document.getElementById("display");
+     document.getElementById("display").innerHTML = note._text;
+    notebook._notes.forEach(function(i) {
+      console.log(i)
+    } )
+ };

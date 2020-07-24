@@ -8,9 +8,9 @@ class NoteBook {
   add(text) {
     this._notes.push(text);
   }
-  // getText() {
-  //   return this._text;
-  // }
+  getText() {
+    return this._notes;
+  }
 
   // set(text) {
   //   text = document.getElementById("app");

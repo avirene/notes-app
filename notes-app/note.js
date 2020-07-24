@@ -1,19 +1,19 @@
 "use strict";
 
 class Note {
-  constructor(text) {
-    this._text = text;
-
+  constructor() {
+    this._text = "";
   }
 
   // getText() {
   //   return this._text;
   // }
 
-  // set(text) {
-  //   text = document.getElementById("app");
-  //   this._text = text;
-  // }
+  set(text) {
+    // text = document.getElementById("userInput")
+    this._text = text;
+    console.log(text)
+  }
 
   // textInput(){
   //   var userInput = document.getElementById('user_input').value;
