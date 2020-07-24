@@ -8,7 +8,6 @@ function text() {
   note.set(input)
   notebook.add(note);
   addnotes(notebook)
-  // document.getElementById("display").innerHTML = note._text;
   input.value = '';
 }
 
@@ -16,9 +15,20 @@ document.getElementById('button1').addEventListener('click', whenClicked);
 
  function addnotes(notebook) {
    var display = document.getElementById("user_input").value;
-  // var display = document.getElementById("display");
+
      document.getElementById("display").innerHTML = note._text;
-    notebook._notes.forEach(function(i) {
-      console.log(i)
-    } )
+    
+      var ul = document.createElement('ul');
+      document.getElementById('display').appendChild(ul);
+      notebook._notes.forEach(noteList);
+
+      function noteList(element) {
+        var li = document.createElement('li');
+
+        ul.appendChild(li);
+
+        document.createTextNode(element);
+
+        li.innerHTML = li.innerHTML + element;
+      }
  };
