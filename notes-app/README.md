@@ -26,12 +26,18 @@ To create a Single Page Application capable of running on the browser and storin
 - Second and third tests written and passed
 - Model now switched over to classes
 - HTML connected to note-model
+- Interface created that will link the note, notebook classes with HTML doc
+- Notebook will now store notes
 
 ## Improvements
+- Ability to retrieve multiple notes from notebook class
+- Iteration over the notes to create them as links
+- CSS
 
 ## Installation
 1. Clone repository
 2. ```npm install```
+3. ```open index.html```
 
 ## Collaborators
 mattybwoy, avirene, Joanne0330

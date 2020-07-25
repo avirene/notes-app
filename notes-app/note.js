@@ -6,7 +6,6 @@ class Note {
   }
 
   set(text) {
-    // text = document.getElementById("userInput")
     this._text = text;
     console.log(text)
   }
